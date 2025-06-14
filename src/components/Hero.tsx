@@ -1,8 +1,26 @@
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [displayText, setDisplayText] = useState("");
+  const fullText = "Data Analyst & Software Developer";
+  
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= fullText.length) {
+        setDisplayText(fullText.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 100);
+
+    return () => clearInterval(typingInterval);
+  }, []);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -11,10 +29,13 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 via-teal-50 to-purple-100 pt-20">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 via-rose-50 to-red-100 pt-20">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <Badge className="mb-4 bg-purple-100 text-purple-800">Data Analyst & Software Developer</Badge>
+          <Badge className="mb-4 bg-red-100 text-red-800 inline-flex items-center">
+            <span className="typing-text">{displayText}</span>
+            <span className="animate-pulse ml-1">|</span>
+          </Badge>
           
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
             Winnie Cheruiyot
