@@ -28,7 +28,16 @@ const Contact = () => {
                 I'd love to hear from you.
               </p>
               
-              <div className="space-y-4">
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-2">Contact Information</h4>
+                  <div className="space-y-2 text-gray-600">
+                    <p>📧 winnbarn01@gmail.com</p>
+                    <p>📱 +254737731566</p>
+                    <p>📍 Lodwar, Turkana County, Kenya</p>
+                  </div>
+                </div>
+                
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">Expertise Areas</h4>
                   <div className="flex flex-wrap gap-2">

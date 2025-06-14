@@ -1,5 +1,6 @@
 
 import { Badge } from "@/components/ui/badge";
+import { Github, Instagram, Youtube, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -14,6 +15,41 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Badge variant="secondary">Available for Freelance</Badge>
             <Badge variant="secondary">Open to Opportunities</Badge>
+          </div>
+          
+          <div className="flex justify-center space-x-6 mb-8">
+            <a 
+              href="https://github.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <Github size={24} />
+            </a>
+            <a 
+              href="https://linkedin.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <Linkedin size={24} />
+            </a>
+            <a 
+              href="https://instagram.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <Instagram size={24} />
+            </a>
+            <a 
+              href="https://youtube.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <Youtube size={24} />
+            </a>
           </div>
           
           <div className="border-t border-gray-700 pt-8">
