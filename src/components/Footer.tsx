@@ -54,7 +54,7 @@ const Footer = () => {
           
           <div className="border-t border-gray-700 pt-8">
             <p className="text-gray-400">
-              © 2024 Winnie Cheruiyot. All rights reserved.
+              © 2025 Winnie Cheruiyot. All rights reserved.
             </p>
           </div>
         </div>
