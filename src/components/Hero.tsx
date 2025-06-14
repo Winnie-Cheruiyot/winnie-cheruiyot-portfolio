@@ -11,10 +11,10 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-20">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 via-teal-50 to-purple-100 pt-20">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <Badge className="mb-4 bg-blue-100 text-blue-800">Data Analyst & Software Developer</Badge>
+          <Badge className="mb-4 bg-purple-100 text-purple-800">Data Analyst & Software Developer</Badge>
           
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
             Winnie Cheruiyot
