@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -36,14 +35,14 @@ const Contact = () => {
                       <span className="text-xl">📧</span>
                       <div>
                         <p className="font-medium">Email</p>
-                        <p>winnie.cheruiyot@email.com</p>
+                        <p>winnbarn01@gmail.com</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <span className="text-xl">📱</span>
                       <div>
                         <p className="font-medium">Phone</p>
-                        <p>+254 700 000 000</p>
+                        <p>+254737731566</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">

@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Github, Instagram, Youtube, Linkedin } from "lucide-react";
 
@@ -22,8 +21,8 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-3">Contact Info</h4>
               <div className="space-y-2 text-gray-300 text-sm">
-                <p>📧 winnie.cheruiyot@email.com</p>
-                <p>📱 +254 700 000 000</p>
+                <p>📧 winnbarn01@gmail.com</p>
+                <p>📱 +254737731566</p>
                 <p>📍 Nairobi, Kenya</p>
               </div>
             </div>
@@ -50,7 +49,7 @@ const Footer = () => {
           
           <div className="flex justify-center space-x-6 mb-8">
             <a 
-              href="mailto:winnie.cheruiyot@email.com" 
+              href="mailto:winnbarn01@gmail.com" 
               className="text-gray-400 hover:text-white transition-colors"
               title="Email Me"
             >
