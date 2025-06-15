@@ -2,7 +2,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Computer, Smartphone, Printer, Wrench, Laptop, Website } from "lucide-react";
+import { Computer, Smartphone, Printer, Wrench, Laptop, Globe } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -37,7 +37,7 @@ const Services = () => {
     {
       title: "Website Design",
       description: "Custom website design and development services to help your business establish a strong online presence.",
-      icon: Website,
+      icon: Globe,
       features: ["Custom Design", "Responsive Layout", "SEO Optimization", "Maintenance"],
       color: "text-red-600"
     },
