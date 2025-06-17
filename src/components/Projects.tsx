@@ -2,6 +2,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -65,9 +66,15 @@ const Projects = () => {
                     ))}
                   </div>
                   
-                  <Button variant="outline" className="w-full mt-auto">
-                    View Details
-                  </Button>
+                  <div className="flex gap-2 mt-auto">
+                    <Button variant="outline" className="flex-1">
+                      View Details
+                    </Button>
+                    <Button variant="default" className="flex-1">
+                      <ExternalLink size={16} className="mr-2" />
+                      Demo
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}

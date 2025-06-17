@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <Badge className="mb-4 bg-blue-100 text-blue-800">
-            Data Analyst & Insights Specialist
+            <span className="typing-text">Data Analyst & Insights Specialist</span>
           </Badge>
           
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
