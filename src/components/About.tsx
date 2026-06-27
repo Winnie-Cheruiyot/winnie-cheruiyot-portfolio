@@ -1,5 +1,5 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import winnieAsset from "@/assets/winnie-about.jpeg.asset.json";
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <img 
-                src="/lovable-uploads/a6162e09-b32b-4810-8495-7b47e16bce78.png" 
+                src={winnieAsset.url}
                 alt="Winnie Cheruiyot" 
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />
