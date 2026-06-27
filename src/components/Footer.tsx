@@ -23,7 +23,7 @@ const Footer = () => {
               <div className="space-y-2 text-gray-300 text-sm">
                 <p>📧 winnbarn01@gmail.com</p>
                 <p>📱 +254737731566</p>
-                <p>📍 Nairobi, Kenya</p>
+                <p>📍 Lodwar, Turkana County, Kenya</p>
               </div>
             </div>
             
