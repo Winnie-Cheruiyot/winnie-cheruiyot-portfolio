@@ -1,7 +1,7 @@
 
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 
 const skills = [
   { name: "Python", level: 95 },
@@ -27,6 +27,22 @@ const containerVariants = {
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
+};
+
+const AnimatedProgress = ({ value }: { value: number }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+
+  return (
+    <div ref={ref} className="relative h-2.5 w-full overflow-hidden rounded-full bg-secondary">
+      <motion.div
+        className="h-full bg-primary rounded-full"
+        initial={{ width: 0 }}
+        animate={isInView ? { width: `${value}%` } : { width: 0 }}
+        transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
+      />
+    </div>
+  );
 };
 
 const Skills = () => {
@@ -72,7 +88,7 @@ const Skills = () => {
                         {skill.level}%
                       </span>
                     </div>
-                    <Progress value={skill.level} className="h-2.5" />
+                    <AnimatedProgress value={skill.level} />
                   </CardContent>
                 </Card>
               </motion.div>
